@@ -21,7 +21,8 @@ textarea {
   font-family: "Roboto";
 }
 body {
-  background-color: #f7f7f7;
+  background-color: #070707;
+  color: white;
 }
 /* HEADER */
 header {
@@ -64,7 +65,7 @@ header #navbar .nav-list .nav-item a:hover {
 /* SECTION BANNER */
 
 main {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 main #banner {
@@ -96,4 +97,7 @@ main button {
 main button:hover {
   background-color: #398;
   transition: color 0.5s;
+}
+main img {
+  border-radius: 4px;
 }
