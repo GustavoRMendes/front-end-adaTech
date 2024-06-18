@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,7 @@ textarea {
 body {
   background-color: #f7f7f7;
 }
+/* HEADER */
 header {
   background-color: #fff;
   height: 80px;
@@ -58,3 +60,5 @@ header #navbar .nav-list .nav-item a:hover {
   color: #777;
   transition: color 0.3s;
 }
+
+/* SECTION BANNER */
