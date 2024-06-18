@@ -91,4 +91,9 @@ main button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  color: white;
+}
+main button:hover {
+  background-color: #398;
+  transition: color 0.5s;
 }
