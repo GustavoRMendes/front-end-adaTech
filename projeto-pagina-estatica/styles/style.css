@@ -81,3 +81,14 @@ main #banner .banner-content .banner-content-title {
 span {
   color: #396;
 }
+
+main .banner-content p {
+  margin: 40px 0;
+}
+main button {
+  padding: 10px 20px;
+  background-color: #396;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
