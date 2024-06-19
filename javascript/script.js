@@ -1,2 +1,3 @@
-const nomeDoUsuario = prompt("Qual seu nome? ");
-alert("Seja Bem-Vindo(a) " + nomeDoUsuario + "!");
+const prompt = require("readline-sync");
+const nomeDoUsuario = prompt.question("Qual seu nome? ");
+console.log(nomeDoUsuario);
