@@ -18,3 +18,9 @@ const nota1 = 10;
 const nota2 = 8;
 const media = (nota1 + nota2) / 2;
 console.log("A média das notas resulta em: " + media);
+
+// Math
+const pi = Math.PI;
+console.log(pi); // 3.14
+console.log(Math.random() * 100);
+console.log(Math.floor(Math.random() * 100));
