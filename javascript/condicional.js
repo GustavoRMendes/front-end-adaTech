@@ -18,3 +18,7 @@ if (true) {
 } else {
   console.log("Condição 3");
 }
+
+// ternário
+const idade = 19;
+const verificacao = idade > 18 ? "Maior" : "Menor";
