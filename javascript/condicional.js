@@ -25,3 +25,19 @@ if (true) {
 const idade = 19;
 const verificacao = idade > 18 ? "Maior" : "Menor";
 console.log(verificacao);
+
+// switch
+const dia = "segunda-feira";
+switch (dia) {
+  case "segunda-feira":
+    console.log("Segunda-feira!");
+    break;
+  case "terça-feira":
+    console.log("Terça-feira!");
+    break;
+  case "quarta-feira":
+    console.log("Quarta-feira!");
+    break;
+  default:
+    console.log("Outro dia da semana!");
+}
