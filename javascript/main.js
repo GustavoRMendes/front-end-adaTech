@@ -24,3 +24,4 @@ const pi = Math.PI;
 console.log(pi); // 3.14
 console.log(Math.random() * 100);
 console.log(Math.floor(Math.random() * 100));
+console.log(Math.round(2737.23762));
