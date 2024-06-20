@@ -24,3 +24,4 @@ if (true) {
 // ternário
 const idade = 19;
 const verificacao = idade > 18 ? "Maior" : "Menor";
+console.log(verificacao);
