@@ -7,6 +7,11 @@ console.log(numero1 === numero2);
 console.log(numero1 == numero2);
 console.log(numero1 == "10");
 
+const idadePessoa1 = 20;
+const idadePessoa2 = 30;
+console.log(idadePessoa1 >= 18 && idadePessoa2 >= 18);
+console.log(idadePessoa1 >= 18 || idadePessoa2 >= 18);
+
 // if
 if (true) {
   console.log("Condição");
