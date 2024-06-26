@@ -12,3 +12,6 @@ for (cont = 0; cont < notas.length; cont++) {
 
 const numeros = [1, 2, 3, 4, 5, 6, 7];
 console.log(numeros.slice(0, 4));
+console.log(numeros.push(8));
+console.log(numeros.unshift(0));
+console.log(numeros);
