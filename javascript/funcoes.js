@@ -29,3 +29,18 @@ message();
 
 const triplo = (numero) => numero * 3;
 console.log(triplo(20));
+
+// Objetos literais
+
+const pessoa = {
+  nome: "Gustavo",
+  idade: 19,
+  profissao: "Programador",
+  trabalhando: false,
+};
+
+console.log(pessoa);
+const carro = {};
+const { marca, ano } = carro;
+carro.ano = 100;
+console.log(carro.ano);
