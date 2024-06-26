@@ -8,3 +8,9 @@ while (saldo < 0) {
 }
 alert("Seu saldo é " + saldo);
 // Do While
+let numero = 10;
+
+do {
+  numero += 1;
+  alert(numero);
+} while (numero < 15);
