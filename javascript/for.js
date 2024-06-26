@@ -27,3 +27,8 @@ console.log(numeros.lastIndexOf(5)); // 7
 for (let numero of numeros) {
   console.log(numero);
 }
+
+// * For In
+for (indicies in numeros) {
+  console.log(indicies);
+}
