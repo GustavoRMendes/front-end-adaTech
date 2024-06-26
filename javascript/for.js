@@ -22,3 +22,8 @@ console.log(numeros);
 console.log(numeros.includes(8)); // false
 console.log(numeros.indexOf(3)); // 2
 console.log(numeros.lastIndexOf(5)); // 7
+
+// * For-of
+for (let numero of numeros) {
+  console.log(numero);
+}
