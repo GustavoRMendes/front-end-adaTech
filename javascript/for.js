@@ -15,3 +15,7 @@ console.log(numeros.slice(0, 4));
 console.log(numeros.push(8));
 console.log(numeros.unshift(0));
 console.log(numeros);
+
+numeros.pop();
+numeros.shift();
+console.log(numeros);
