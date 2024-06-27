@@ -15,3 +15,10 @@ calcular(somar);
 // Array.forEach()
 const lista = ["Gustavo", "Felipe", "Téo", "Camilo"];
 lista.forEach((nome, index, array) => console.log(index + " - " + nome));
+
+// find
+const resultado = lista.find((nome) => {
+  return nome.length < 4;
+});
+console.clear();
+console.log(resultado);
