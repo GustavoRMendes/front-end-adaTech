@@ -17,3 +17,6 @@ const carros = [
 const ano2024 = carros.every((carro) => carro.ano === 2024);
 console.log(ano2024);
 // some
+const numeros2 = [-1, 2, 3, 4, 5, 6, 7];
+const retorno = numeros2.some((numero) => numero > 0);
+console.log(retorno);
