@@ -31,3 +31,8 @@ const triplo = listaDeNumeros.map((numero) => {
 });
 console.log(dobro);
 console.log(triplo);
+
+const resultado = listaDeNumeros.filter((numero) => {
+  return numero > 80;
+});
+console.log(resultado);
