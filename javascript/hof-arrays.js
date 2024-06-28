@@ -20,3 +20,14 @@ console.log(ano2024);
 const numeros2 = [-1, 2, 3, 4, 5, 6, 7];
 const retorno = numeros2.some((numero) => numero > 0);
 console.log(retorno);
+
+// map, filter and reduce
+const listaDeNumeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+const dobro = listaDeNumeros.map((numero) => {
+  return numero * 2;
+});
+const triplo = listaDeNumeros.map((numero) => {
+  return numero * 3;
+});
+console.log(dobro);
+console.log(triplo);
