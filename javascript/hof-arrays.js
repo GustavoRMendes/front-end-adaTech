@@ -21,16 +21,12 @@ const numeros2 = [-1, 2, 3, 4, 5, 6, 7];
 const retorno = numeros2.some((numero) => numero > 0);
 console.log(retorno);
 
-// map, filter and reduce
+// map
 const listaDeNumeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 const dobro = listaDeNumeros.map((numero) => {
   return numero * 2;
 });
-const triplo = listaDeNumeros.map((numero) => {
-  return numero * 3;
-});
 console.log(dobro);
-console.log(triplo);
 
 const carro = [
   {
@@ -91,18 +87,49 @@ const imc = pesoEAltura.map((item) => {
 });
 console.log(imc);
 
-const resultado = listaDeNumeros.filter((numero) => {
-  return numero > 80;
+// filter
+const numeross = [1, 2, 3, 4, 5, 6];
+const resultadoNumeross = numeross.filter((numero) => numero < 6 && numero > 2);
+const paresNumeross = numeross.filter((numero) => numero % 2 === 0);
+console.log(paresNumeross);
+console.log(resultadoNumeross);
+
+const alunos = [
+  { id: 1, nome: "Gustavo", nota: 80 },
+  { id: 2, nome: "Felipe", nota: 95 },
+  { id: 3, nome: "Téo", nota: 60 },
+  { id: 4, nome: "Camilo", nota: 70 },
+];
+const alunosAprovados = alunos.filter((numero) => {
+  return numero.nota > 69.9;
 });
-console.log(resultado);
+console.log(alunosAprovados);
 
+const produtos = [
+  { id: 1, tipo: "Comida", produto: "Hambúrguer", preco: 79.99 },
+  { id: 2, tipo: "Bebida", produto: "Coca Cola", preco: 9.99 },
+  { id: 3, tipo: "Bebida", produto: "Coca Cola Zero", preco: 8.99 },
+  { id: 4, tipo: "Comida", produto: "Pipoca", preco: 15.99 },
+  { id: 5, tipo: "Comida", produto: "Batata Frita", preco: 15.99 },
+  { id: 6, tipo: "Bebida", produto: "Fanta", preco: 9.99 },
+  { id: 7, tipo: "Comida", produto: "Esfirra", preco: 2.99 },
+  { id: 8, tipo: "Comida", produto: "Chocolate", preco: 12.99 },
+  { id: 9, tipo: "Bebida", produto: "Heineken", preco: 22.99 },
+  { id: 10, tipo: "Bebida", produto: "Limonada", preco: 11.99 },
+];
+const filtroDeComida = produtos.filter((item) => item.tipo === "Comida");
+const filtroDeBebida = produtos.filter((item) => item.tipo === "Bebida");
+const filtroDeComidaBarata = produtos.filter(
+  (item) => item.tipo === "Comida" && item.preco < 10
+);
+console.log(filtroDeBebida);
+console.log(filtroDeComida);
+console.log(filtroDeComidaBarata);
+// reduce
 const array1 = [1, 2, 3, 4];
-
 const initialValue = 0;
 const sumWithInitial = array1.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
   initialValue
 );
-
 console.log(sumWithInitial);
-// Expected output: 10
