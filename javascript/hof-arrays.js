@@ -125,11 +125,39 @@ const filtroDeComidaBarata = produtos.filter(
 console.log(filtroDeBebida);
 console.log(filtroDeComida);
 console.log(filtroDeComidaBarata);
+
 // reduce
-const array1 = [1, 2, 3, 4];
-const initialValue = 0;
-const sumWithInitial = array1.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
-  initialValue
+const listaAleatoria = [5, 10, 15, 20, 25, 30];
+const soma = listaAleatoria.reduce((acumulador, item) => {
+  return acumulador + item;
+}, 0);
+const somaDosPares = listaAleatoria.reduce((acumulador, item) => {
+  if (item % 2 === 0) {
+    return item + acumulador;
+  } else {
+    return acumulador;
+  }
+}, 0);
+console.log(somaDosPares);
+console.log(soma);
+
+const notasDoGustavo = [8, 9];
+const mediaDoGustavo = notasDoGustavo.reduce(
+  (acumulador, item, _, arrayCompleto) => {
+    return item / arrayCompleto.length + acumulador;
+  },
+  0
 );
-console.log(sumWithInitial);
+console.log(mediaDoGustavo);
+
+const carrinho = [
+  { id: 1, tipo: "Camisa", preco: 20 },
+  { id: 2, tipo: "Bermuda", preco: 30 },
+  { id: 3, tipo: "Relógio", preco: 40 },
+  { id: 4, tipo: "Casaco", preco: 50 },
+  { id: 5, tipo: "Perfume", preco: 60 },
+];
+const totalDoCarrinho = carrinho.reduce((acumulador, item) => {
+  return acumulador + item.preco;
+}, 0);
+console.log(totalDoCarrinho);
