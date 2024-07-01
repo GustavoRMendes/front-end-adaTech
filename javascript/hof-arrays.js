@@ -32,6 +32,37 @@ const triplo = listaDeNumeros.map((numero) => {
 console.log(dobro);
 console.log(triplo);
 
+const carro = [
+  {
+    id: 1,
+    marca: "Ferrari",
+    ano: 2024,
+    preco: 2999,
+    quantidade: 2,
+  },
+  {
+    id: 2,
+    marca: "Mercedes",
+    ano: 2022,
+    preco: 1999,
+    quantidade: 3,
+  },
+  {
+    id: 3,
+    marca: "Porshe",
+    ano: 2020,
+    preco: 4999,
+    quantidade: 1,
+  },
+];
+const total = carro.map((item) => {
+  return {
+    ...item,
+    total: item.preco * item.quantidade,
+  };
+});
+console.log(total);
+
 const resultado = listaDeNumeros.filter((numero) => {
   return numero > 80;
 });
@@ -39,7 +70,6 @@ console.log(resultado);
 
 const array1 = [1, 2, 3, 4];
 
-// 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
 const sumWithInitial = array1.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
