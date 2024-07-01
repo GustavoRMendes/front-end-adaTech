@@ -63,6 +63,34 @@ const total = carro.map((item) => {
 });
 console.log(total);
 
+const pesoEAltura = [
+  {
+    id: 1,
+    nome: "Gustavo",
+    altura: 1.74,
+    peso: 65,
+  },
+  {
+    id: 2,
+    nome: "Felipe",
+    altura: 1.73,
+    peso: 70,
+  },
+  {
+    id: 3,
+    nome: "Téo",
+    altura: 1.8,
+    peso: 73,
+  },
+];
+const imc = pesoEAltura.map((item) => {
+  return {
+    ...item,
+    imc: item.peso / (item.altura * item.altura),
+  };
+});
+console.log(imc);
+
 const resultado = listaDeNumeros.filter((numero) => {
   return numero > 80;
 });
