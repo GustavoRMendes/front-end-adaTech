@@ -1,0 +1,6 @@
+API
+
+Application Programming Interface
+Reduz o Tempo de Desenvolvimento
+APIs Públicas, Privadas, Parceiros
+APIRest, APIRestful
