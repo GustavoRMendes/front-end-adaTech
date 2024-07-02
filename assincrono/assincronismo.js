@@ -19,17 +19,39 @@ const fs = require("fs");
 // console.log("Depois do setTimeout");
 
 // Promises
-const promessa = new Promise((resolve, reject) => {
-  fs.readFile("assincrono/arquivo.txt", (erro, conteudo) => {
-    if (erro) {
-      reject("Ocorreu um erro: " + erro);
-    } else {
-      resolve(String(conteudo));
-    }
-  });
-});
+// const promessa = new Promise((resolve, reject) => {
+//   fs.readFile("assincrono/arquivo.txt", (erro, conteudo) => {
+//     if (erro) {
+//       reject("Ocorreu um erro: " + erro);
+//     } else {
+//       resolve(String(conteudo));
+//     }
+//   });
+// });
 
-promessa
+// promessa
+//   .then((conteudoDoRetornoDaPromise) => {
+//     console.log("Deu certo: \n" + conteudoDoRetornoDaPromise);
+//   })
+//   .catch((erro) => {
+//     console.log("Deu ruim: \n" + erro);
+//   })
+//   .finally(() => {
+//     console.log("Promessa encerrada.");
+//   });
+
+function lerArquivo() {
+  return new Promise((resolve, reject) => {
+    fs.readFile("assincrono/arquivo.txt", (erro, conteudo) => {
+      if (erro) {
+        reject("Ocorreu um erro: " + erro);
+      } else {
+        resolve(String(conteudo));
+      }
+    });
+  });
+}
+lerArquivo()
   .then((conteudoDoRetornoDaPromise) => {
     console.log("Deu certo: \n" + conteudoDoRetornoDaPromise);
   })
