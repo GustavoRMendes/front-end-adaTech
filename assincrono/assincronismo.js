@@ -61,3 +61,21 @@ lerArquivo()
   .finally(() => {
     console.log("Promessa encerrada.");
   });
+
+// Async/Await
+
+async function leituraDeDados() {
+  console.log("Antes da promise ser resolvida.");
+  try {
+    const retornoDaPromise = await lerArquivo();
+    console.log(retornoDaPromise);
+    console.log("Depois da promise ser resolvida.");
+  } catch (error) {
+    console.log(error);
+    console.log("Isso aqui é executado depois da promise(erro).");
+  } finally {
+    console.log("Finalizando promessa.");
+  }
+}
+
+leituraDeDados();
