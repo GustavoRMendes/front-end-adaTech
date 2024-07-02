@@ -10,3 +10,12 @@ fs.readFile('javascript-json/.prettierrc.json', (err, data) => {
     console.log(typeof data);
   }
 });
+
+// JSON.stringfy()
+
+const heroe = {
+  name: 'Flash',
+  nickName: 'Barry Allen',
+  age: 28,
+};
+console.log(JSON.stringify(heroe));
