@@ -106,3 +106,9 @@ main button:hover {
 main img {
   border-radius: 4px;
 }
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem 0;
+}
