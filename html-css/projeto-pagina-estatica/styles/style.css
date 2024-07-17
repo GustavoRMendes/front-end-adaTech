@@ -1,7 +1,4 @@
 @import url("./global.css");
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  margin: 2rem 0 1rem 0;
-}
+@import url("./header.css");
+@import url("./main.css");
+@import url("./footer.css");
