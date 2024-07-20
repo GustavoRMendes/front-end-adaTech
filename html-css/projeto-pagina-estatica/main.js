@@ -6,6 +6,8 @@ const brand = document.querySelector(".nav-brand");
 console.log(brand);
 const image = document.querySelector(".banner-image");
 console.log(image);
+
+// Events
 bannerContentBtn.addEventListener("click", () => {
   const confirmacao = confirm("Tem certeza que quer baixar?");
   if (confirmacao) {
