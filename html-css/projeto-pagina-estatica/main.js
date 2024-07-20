@@ -1,4 +1,5 @@
 const bannerContentBtn = document.querySelector(".banner-content-btn");
+console.log(bannerContentBtn);
 const links = document.querySelectorAll(".nav-item");
 const brand = document.querySelector(".nav-brand");
 const image = document.querySelector(".banner-image");
