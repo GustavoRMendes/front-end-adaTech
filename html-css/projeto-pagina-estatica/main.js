@@ -24,9 +24,9 @@ links.forEach((link) => {
 });
 
 brand.addEventListener("click", () => {
-  alert("Bem-vindo ao Portfólio do Gustavo!");
+  alert("Bem-vindo ao Portfólio de Gustavo Mendes!");
 });
 
 image.addEventListener("click", () => {
-  alert("Esse sou eu, Gustavo Mendes.");
+  alert("Esse sou eu.");
 });
