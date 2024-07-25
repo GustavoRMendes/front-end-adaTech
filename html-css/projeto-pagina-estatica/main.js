@@ -19,7 +19,7 @@ bannerContentBtn.addEventListener("click", () => {
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
-    alert("Clique no link");
+    alert("Clique no link!");
   });
 });
 
