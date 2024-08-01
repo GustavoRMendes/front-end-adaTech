@@ -28,5 +28,5 @@ brand.addEventListener("click", () => {
 });
 
 image.addEventListener("click", () => {
-  alert("Esse sou eu.");
+  alert("Olá, esse sou eu.");
 });
