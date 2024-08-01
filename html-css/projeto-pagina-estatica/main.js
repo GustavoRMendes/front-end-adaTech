@@ -9,7 +9,7 @@ console.log(image);
 
 // Events
 bannerContentBtn.addEventListener("click", () => {
-  const confirmacao = confirm("Tem certeza que quer baixar?");
+  const confirmacao = confirm("Tem certeza que quer baixar o arquivo?");
   if (confirmacao) {
     alert("Arquivo baixado!");
   } else {
